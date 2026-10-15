@@ -1,5 +1,7 @@
 # Prove Me Wrong
 
+**Live site: https://prove-me-wrong-gamma.vercel.app**
+
 Write your view on a Nifty 50 stock in three sentences. Press Play. Each sentence is marked **supported**, **undermined** (with a restated version) or **no signal**, using the one signal that can actually test it. Side B lists what would prove each sentence wrong.
 
 The difference from a normal stock app: every model is backtested on years it never saw, against a simple baseline, and the **scoreboard** shows the result, including the losses. Direction calls lost to "assume it goes up", so the app never makes them.
