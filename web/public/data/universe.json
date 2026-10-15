@@ -1,0 +1,355 @@
+{
+ "as_of": "2026-10-14",
+ "stocks": [
+  {
+   "sym": "ADANIENT",
+   "name": "Adani Enterprises",
+   "sector": "Metals & Mining",
+   "last_close": 2722.60009765625,
+   "r20": -0.0729371845197484
+  },
+  {
+   "sym": "ADANIPORTS",
+   "name": "Adani Ports & SEZ",
+   "sector": "Services",
+   "last_close": 1748.699951171875,
+   "r20": 0.02015947107092142
+  },
+  {
+   "sym": "APOLLOHOSP",
+   "name": "Apollo Hospitals",
+   "sector": "Healthcare",
+   "last_close": 7824.0,
+   "r20": -0.10773499496273331
+  },
+  {
+   "sym": "ASIANPAINT",
+   "name": "Asian Paints",
+   "sector": "Consumer Durables",
+   "last_close": 2344.699951171875,
+   "r20": -0.024477303195552302
+  },
+  {
+   "sym": "AXISBANK",
+   "name": "Axis Bank",
+   "sector": "Financials",
+   "last_close": 1264.5999755859375,
+   "r20": 0.03353074015935853
+  },
+  {
+   "sym": "BAJAJ-AUTO",
+   "name": "Bajaj Auto",
+   "sector": "Automobile",
+   "last_close": 10250.0,
+   "r20": -0.10843870001280997
+  },
+  {
+   "sym": "BAJFINANCE",
+   "name": "Bajaj Finance",
+   "sector": "Financials",
+   "last_close": 957.0,
+   "r20": -0.05310983740969899
+  },
+  {
+   "sym": "BAJAJFINSV",
+   "name": "Bajaj Finserv",
+   "sector": "Financials",
+   "last_close": 1721.699951171875,
+   "r20": -0.07484205507863972
+  },
+  {
+   "sym": "BEL",
+   "name": "Bharat Electronics",
+   "sector": "Capital Goods",
+   "last_close": 382.3500061035156,
+   "r20": -0.0014374070896172597
+  },
+  {
+   "sym": "BHARTIARTL",
+   "name": "Bharti Airtel",
+   "sector": "Telecom",
+   "last_close": 1794.5999755859375,
+   "r20": -0.01975239326380418
+  },
+  {
+   "sym": "CIPLA",
+   "name": "Cipla",
+   "sector": "Healthcare",
+   "last_close": 1314.5999755859375,
+   "r20": -0.027312640702199076
+  },
+  {
+   "sym": "COALINDIA",
+   "name": "Coal India",
+   "sector": "Energy",
+   "last_close": 417.0,
+   "r20": -0.005381178904516837
+  },
+  {
+   "sym": "DRREDDY",
+   "name": "Dr. Reddy's Laboratories",
+   "sector": "Healthcare",
+   "last_close": 1216.0,
+   "r20": 0.06016214653777219
+  },
+  {
+   "sym": "EICHERMOT",
+   "name": "Eicher Motors",
+   "sector": "Automobile",
+   "last_close": 7082.5,
+   "r20": -0.050922593847554154
+  },
+  {
+   "sym": "ETERNAL",
+   "name": "Eternal (Zomato)",
+   "sector": "Consumer Services",
+   "last_close": 316.0,
+   "r20": 0.0023762387418830855
+  },
+  {
+   "sym": "GRASIM",
+   "name": "Grasim Industries",
+   "sector": "Construction Materials",
+   "last_close": 2873.0,
+   "r20": -0.0986902155590581
+  },
+  {
+   "sym": "HCLTECH",
+   "name": "HCL Technologies",
+   "sector": "IT",
+   "last_close": 1327.0,
+   "r20": 0.05682161515744433
+  },
+  {
+   "sym": "HDFCBANK",
+   "name": "HDFC Bank",
+   "sector": "Financials",
+   "last_close": 710.7000122070312,
+   "r20": -0.008197594459322666
+  },
+  {
+   "sym": "HDFCLIFE",
+   "name": "HDFC Life Insurance",
+   "sector": "Financials",
+   "last_close": 544.0499877929688,
+   "r20": 0.05274063410991392
+  },
+  {
+   "sym": "HINDALCO",
+   "name": "Hindalco Industries",
+   "sector": "Metals & Mining",
+   "last_close": 882.5,
+   "r20": -0.08281942400839881
+  },
+  {
+   "sym": "HINDUNILVR",
+   "name": "Hindustan Unilever",
+   "sector": "FMCG",
+   "last_close": 1895.5,
+   "r20": -0.02222544315340702
+  },
+  {
+   "sym": "ICICIBANK",
+   "name": "ICICI Bank",
+   "sector": "Financials",
+   "last_close": 1338.5999755859375,
+   "r20": -0.00877658949278981
+  },
+  {
+   "sym": "INDIGO",
+   "name": "InterGlobe Aviation",
+   "sector": "Services",
+   "last_close": 4718.5,
+   "r20": -0.01211242361105036
+  },
+  {
+   "sym": "INFY",
+   "name": "Infosys",
+   "sector": "IT",
+   "last_close": 1088.0,
+   "r20": 0.010161750259499058
+  },
+  {
+   "sym": "ITC",
+   "name": "ITC",
+   "sector": "FMCG",
+   "last_close": 261.5,
+   "r20": 0.013474698583360478
+  },
+  {
+   "sym": "JIOFIN",
+   "name": "Jio Financial Services",
+   "sector": "Financials",
+   "last_close": 219.0,
+   "r20": -0.029691816861992848
+  },
+  {
+   "sym": "JSWSTEEL",
+   "name": "JSW Steel",
+   "sector": "Metals & Mining",
+   "last_close": 1176.199951171875,
+   "r20": -0.04407465002042965
+  },
+  {
+   "sym": "KOTAKBANK",
+   "name": "Kotak Mahindra Bank",
+   "sector": "Financials",
+   "last_close": 438.04998779296875,
+   "r20": 0.06666382522859848
+  },
+  {
+   "sym": "LT",
+   "name": "Larsen & Toubro",
+   "sector": "Construction",
+   "last_close": 3642.0,
+   "r20": -0.055721955968847325
+  },
+  {
+   "sym": "M&M",
+   "name": "Mahindra & Mahindra",
+   "sector": "Automobile",
+   "last_close": 2793.699951171875,
+   "r20": -0.081030724752984
+  },
+  {
+   "sym": "MARUTI",
+   "name": "Maruti Suzuki",
+   "sector": "Automobile",
+   "last_close": 11178.0,
+   "r20": -0.09002615165771921
+  },
+  {
+   "sym": "MAXHEALTH",
+   "name": "Max Healthcare",
+   "sector": "Healthcare",
+   "last_close": 852.5,
+   "r20": -0.1891408720660097
+  },
+  {
+   "sym": "NESTLEIND",
+   "name": "Nestle India",
+   "sector": "FMCG",
+   "last_close": 1383.199951171875,
+   "r20": 0.015445412358780608
+  },
+  {
+   "sym": "NTPC",
+   "name": "NTPC",
+   "sector": "Power",
+   "last_close": 313.70001220703125,
+   "r20": -0.049139199832856306
+  },
+  {
+   "sym": "ONGC",
+   "name": "ONGC",
+   "sector": "Energy",
+   "last_close": 225.5,
+   "r20": -0.04529974629574607
+  },
+  {
+   "sym": "POWERGRID",
+   "name": "Power Grid Corporation",
+   "sector": "Power",
+   "last_close": 248.9499969482422,
+   "r20": -0.054141179330889244
+  },
+  {
+   "sym": "RELIANCE",
+   "name": "Reliance Industries",
+   "sector": "Energy",
+   "last_close": 1174.5999755859375,
+   "r20": -0.05038625176669154
+  },
+  {
+   "sym": "SBILIFE",
+   "name": "SBI Life Insurance",
+   "sector": "Financials",
+   "last_close": 1650.0,
+   "r20": -0.002481751593823134
+  },
+  {
+   "sym": "SBIN",
+   "name": "State Bank of India",
+   "sector": "Financials",
+   "last_close": 954.9000244140625,
+   "r20": -0.013625438753279262
+  },
+  {
+   "sym": "SHRIRAMFIN",
+   "name": "Shriram Finance",
+   "sector": "Financials",
+   "last_close": 950.0,
+   "r20": -0.03088647215119078
+  },
+  {
+   "sym": "SUNPHARMA",
+   "name": "Sun Pharmaceutical",
+   "sector": "Healthcare",
+   "last_close": 1746.4000244140625,
+   "r20": -0.04948794127328515
+  },
+  {
+   "sym": "TATACONSUM",
+   "name": "Tata Consumer Products",
+   "sector": "FMCG",
+   "last_close": 987.9000244140625,
+   "r20": 0.00182375818343683
+  },
+  {
+   "sym": "TMPV",
+   "name": "Tata Motors Passenger Vehicles",
+   "sector": "Automobile",
+   "last_close": 283.79998779296875,
+   "r20": -0.06744134391213485
+  },
+  {
+   "sym": "TATASTEEL",
+   "name": "Tata Steel",
+   "sector": "Metals & Mining",
+   "last_close": 174.49000549316406,
+   "r20": -0.051164274139785526
+  },
+  {
+   "sym": "TCS",
+   "name": "Tata Consultancy Services",
+   "sector": "IT",
+   "last_close": 2304.89990234375,
+   "r20": 0.028964623619380347
+  },
+  {
+   "sym": "TECHM",
+   "name": "Tech Mahindra",
+   "sector": "IT",
+   "last_close": 1575.199951171875,
+   "r20": -0.00044433579329794526
+  },
+  {
+   "sym": "TITAN",
+   "name": "Titan Company",
+   "sector": "Consumer Durables",
+   "last_close": 4444.0,
+   "r20": -0.0886601819798134
+  },
+  {
+   "sym": "TRENT",
+   "name": "Trent",
+   "sector": "Consumer Services",
+   "last_close": 2971.0,
+   "r20": 0.08459698728360188
+  },
+  {
+   "sym": "ULTRACEMCO",
+   "name": "UltraTech Cement",
+   "sector": "Construction Materials",
+   "last_close": 10795.0,
+   "r20": 0.009119735642777016
+  },
+  {
+   "sym": "WIPRO",
+   "name": "Wipro",
+   "sector": "IT",
+   "last_close": 170.9199981689453,
+   "r20": 0.005397163012627715
+  }
+ ]
+}

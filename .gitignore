@@ -1,0 +1,6 @@
+.venv/
+pipeline/cache/
+__pycache__/
+.playwright-mcp/
+.impeccable/review/
+.impeccable/ref/

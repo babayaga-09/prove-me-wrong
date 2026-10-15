@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-15T12:00:00+05:30",
+  "title": "Design System: Prove Me Wrong",
+  "extensions": {
+    "colorMeta": {
+      "primary": { "role": "primary", "displayName": "Action Blue", "canonical": "#2563eb", "tonalRamp": ["#172554", "#1e3a8a", "#1d4ed8", "#2563eb", "#3b82f6", "#8fb0ff", "#c7d8ff", "#eaf1ff"] },
+      "primary-hover": { "role": "primary", "displayName": "Action Blue Hover", "canonical": "#1d4ed8" },
+      "primary-ink": { "role": "primary", "displayName": "Link Blue", "canonical": "#2563eb" },
+      "primary-soft": { "role": "primary", "displayName": "Selection Wash", "canonical": "#eaf1ff" },
+      "for": { "role": "secondary", "displayName": "Supported Green", "canonical": "#067a52", "tonalRamp": ["#04301f", "#12302a", "#055f40", "#067a52", "#0e9a68", "#3ccb8f", "#a6e8cb", "#e6f6ef"] },
+      "for-wash": { "role": "secondary", "displayName": "For Wash", "canonical": "#e6f6ef" },
+      "against": { "role": "secondary", "displayName": "Undermined Red", "canonical": "#c02a30", "tonalRamp": ["#3a1c22", "#6e1519", "#9c2126", "#c02a30", "#e0484d", "#ff7477", "#ffc2c3", "#fdecec"] },
+      "against-wash": { "role": "secondary", "displayName": "Against Wash", "canonical": "#fdecec" },
+      "open-wash": { "role": "neutral", "displayName": "Open Wash", "canonical": "#f1f3f7" },
+      "bg": { "role": "neutral", "displayName": "Paper White", "canonical": "#ffffff", "tonalRamp": ["#0b0f17", "#121826", "#222b3c", "#44506a", "#636c80", "#d3d9e3", "#f6f8fb", "#ffffff"] },
+      "surface": { "role": "neutral", "displayName": "Cool Band", "canonical": "#f6f8fb" },
+      "card": { "role": "neutral", "displayName": "Card", "canonical": "#ffffff" },
+      "fg": { "role": "neutral", "displayName": "Ink", "canonical": "#121826" },
+      "fg-2": { "role": "neutral", "displayName": "Slate", "canonical": "#44506a" },
+      "fg-3": { "role": "neutral", "displayName": "Muted Slate", "canonical": "#636c80" },
+      "line": { "role": "neutral", "displayName": "Hairline", "canonical": "#e6eaf0" },
+      "line-strong": { "role": "neutral", "displayName": "Rule", "canonical": "#d3d9e3" },
+      "dark-primary-ink": { "role": "primary", "displayName": "Link Blue (dark)", "canonical": "#8fb0ff" },
+      "dark-primary-soft": { "role": "primary", "displayName": "Selection Wash (dark)", "canonical": "#1a2747" },
+      "dark-for": { "role": "secondary", "displayName": "Supported Green (dark)", "canonical": "#3ccb8f" },
+      "dark-for-wash": { "role": "secondary", "displayName": "For Wash (dark)", "canonical": "#12302a" },
+      "dark-against": { "role": "secondary", "displayName": "Undermined Red (dark)", "canonical": "#ff7477" },
+      "dark-against-wash": { "role": "secondary", "displayName": "Against Wash (dark)", "canonical": "#3a1c22" },
+      "dark-open-wash": { "role": "neutral", "displayName": "Open Wash (dark)", "canonical": "#1d2433" },
+      "dark-bg": { "role": "neutral", "displayName": "Paper White (dark)", "canonical": "#0b0f17" },
+      "dark-surface": { "role": "neutral", "displayName": "Cool Band (dark)", "canonical": "#111725" },
+      "dark-card": { "role": "neutral", "displayName": "Card (dark)", "canonical": "#151c2c" },
+      "dark-fg": { "role": "neutral", "displayName": "Ink (dark)", "canonical": "#e8ebf2" },
+      "dark-fg-2": { "role": "neutral", "displayName": "Slate (dark)", "canonical": "#aab3c5" },
+      "dark-fg-3": { "role": "neutral", "displayName": "Muted Slate (dark)", "canonical": "#7f899c" },
+      "dark-line": { "role": "neutral", "displayName": "Hairline (dark)", "canonical": "#222b3c" },
+      "dark-line-strong": { "role": "neutral", "displayName": "Rule (dark)", "canonical": "#314058" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Home hero headline only, capped near 16ch." },
+      "headline": { "displayName": "Headline", "purpose": "Page titles (34/44) and home section headings (32/40)." },
+      "title": { "displayName": "Title", "purpose": "Section and table heads on operating pages; card and step titles at 17-20px semibold." },
+      "lead": { "displayName": "Lead", "purpose": "Paragraph under a heading, Slate, 52-64ch." },
+      "body": { "displayName": "Body", "purpose": "Running copy and thesis sentences; tabular numerals on." },
+      "label": { "displayName": "Label", "purpose": "Form labels, chip text, metadata. Sentence case, never uppercase." },
+      "caption": { "displayName": "Caption", "purpose": "Column heads, chart notes, disclaimer; 11px on chart axes." }
+    },
+    "shadows": [
+      { "name": "floating-card", "value": "0 1px 2px rgba(18,24,38,0.04), 0 12px 32px -12px rgba(18,24,38,0.14)", "purpose": "Hero product card, search popover, hover lift on linked stock cards. Dark: 0 1px 2px rgba(0,0,0,0.3), 0 16px 40px -16px rgba(0,0,0,0.6)." }
+    ],
+    "motion": [
+      { "name": "resolve", "value": "380ms cubic-bezier(0.16, 1, 0.3, 1); opacity 0 and translateY(4px) to rest", "purpose": "A verdict chip or restatement landing. Off under reduced motion." },
+      { "name": "grow", "value": "560ms cubic-bezier(0.16, 1, 0.3, 1); scaleX 0 to 1 from the centre", "purpose": "Lean bar filling on Test. Off under reduced motion." },
+      { "name": "hero-replay", "value": "first chip at 700ms, then every 650ms", "purpose": "Hero card replays its verdicts once on load; reduced motion shows all at once." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one filled action on a view: Test your thesis, Test a thesis.",
+      "html": "<button class=\"ds-btn-primary\">Test your thesis <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; gap: 8px; height: 48px; padding: 0 24px; border: 0; border-radius: 12px; background: var(--primary, #2563eb); color: #fff; font: 600 16px/1 Figtree, system-ui, sans-serif; cursor: pointer; transition: background-color .15s; } .ds-btn-primary:hover { background: var(--primary-hover, #1d4ed8); } .ds-btn-primary:focus-visible { outline: 2px solid var(--primary, #2563eb); outline-offset: 2px; } .ds-btn-primary:disabled { background: rgba(37,99,235,.5); cursor: not-allowed; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Outlined companion to the primary action (See our track record).",
+      "html": "<button class=\"ds-btn-secondary\">See our track record</button>",
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; height: 48px; padding: 0 24px; border: 1px solid var(--line-strong, #d3d9e3); border-radius: 12px; background: transparent; color: var(--fg, #121826); font: 600 16px/1 Figtree, system-ui, sans-serif; cursor: pointer; transition: background-color .15s; } .ds-btn-secondary:hover { background: var(--surface, #f6f8fb); } .ds-btn-secondary:focus-visible { outline: 2px solid var(--primary, #2563eb); outline-offset: 2px; }"
+    },
+    {
+      "name": "Verdict Chips",
+      "kind": "chip",
+      "refersTo": "chip-supported",
+      "description": "Supported / Undermined / Open: icon plus word, never colour alone.",
+      "html": "<span class=\"ds-chip ds-chip-for\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20 6 9 17l-5-5\"/></svg>Supported</span> <span class=\"ds-chip ds-chip-against\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M18 6 6 18\"/><path d=\"m6 6 12 12\"/></svg>Undermined</span> <span class=\"ds-chip ds-chip-open\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.25\" stroke-linecap=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/></svg>Open</span>",
+      "css": ".ds-chip { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 9999px; font: 500 13px/1.4 Figtree, system-ui, sans-serif; white-space: nowrap; } .ds-chip-for { background: var(--for-wash, #e6f6ef); color: var(--for, #067a52); } .ds-chip-against { background: var(--against-wash, #fdecec); color: var(--against, #c02a30); } .ds-chip-open { background: var(--open-wash, #f1f3f7); color: var(--fg-2, #44506a); }"
+    },
+    {
+      "name": "Lean Bar",
+      "kind": "custom",
+      "refersTo": "lean-bar",
+      "description": "Diverging evidence bar: For grows right in green, Against grows left in red, length set by confidence.",
+      "html": "<div class=\"ds-lean\" role=\"img\" aria-label=\"Leans for, tested evidence\"><div class=\"ds-lean-track\"><span class=\"ds-lean-mid\"></span><span class=\"ds-lean-fill\"></span></div><div class=\"ds-lean-cap\"><span>Against</span><span>For</span></div></div>",
+      "css": ".ds-lean { width: 170px; font-family: Figtree, system-ui, sans-serif; } .ds-lean-track { position: relative; height: 8px; border-radius: 9999px; background: var(--surface, #f6f8fb); box-shadow: inset 0 0 0 1px var(--line, #e6eaf0); } .ds-lean-mid { position: absolute; top: -3px; bottom: -3px; left: 50%; width: 1px; background: var(--line-strong, #d3d9e3); } .ds-lean-fill { position: absolute; top: 0; bottom: 0; left: 50%; width: 36%; border-radius: 9999px; background: var(--for, #067a52); transform-origin: left; transition: transform .56s cubic-bezier(.16,1,.3,1); } .ds-lean:hover .ds-lean-fill { transform: scaleX(1.05); } .ds-lean-cap { display: flex; justify-content: space-between; margin-top: 4px; font-size: 11px; color: var(--fg-3, #636c80); }"
+    },
+    {
+      "name": "Stock Select",
+      "kind": "input",
+      "refersTo": "select",
+      "description": "Native select with a custom chevron, 44px tall, 12px radius.",
+      "html": "<label class=\"ds-field\"><span>Stock</span><span class=\"ds-select-wrap\"><select class=\"ds-select\"><option>HDFC Bank</option><option>Infosys</option></select><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" aria-hidden=\"true\"><path d=\"m6 9 6 6 6-6\"/></svg></span></label>",
+      "css": ".ds-field { display: block; width: 256px; font-family: Figtree, system-ui, sans-serif; } .ds-field > span:first-child { display: block; margin-bottom: 6px; font-size: 13px; color: var(--fg-2, #44506a); } .ds-select-wrap { position: relative; display: block; } .ds-select-wrap svg { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); color: var(--fg-2, #44506a); pointer-events: none; } .ds-select { width: 100%; height: 44px; padding: 0 36px 0 12px; appearance: none; border: 1px solid var(--line-strong, #d3d9e3); border-radius: 12px; background: var(--card, #fff); color: var(--fg, #121826); font: 400 15px Figtree, system-ui, sans-serif; cursor: pointer; transition: border-color .15s; } .ds-select:hover { border-color: var(--fg-3, #636c80); } .ds-select:focus-visible { outline: 2px solid var(--primary, #2563eb); outline-offset: 2px; }"
+    },
+    {
+      "name": "Top Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Sticky 64px bar: wordmark, Slate links with an 8px hover fill, active link in Link Blue.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-logo\" href=\"#\"><svg width=\"28\" height=\"28\" viewBox=\"0 0 28 28\" aria-hidden=\"true\"><rect width=\"28\" height=\"28\" rx=\"8\" fill=\"#2563eb\"/><path d=\"M14 8.5v11\" stroke=\"#fff\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\".55\"/><path d=\"M14 14h7\" stroke=\"#fff\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><path d=\"M7 14h7\" stroke=\"#fff\" stroke-width=\"3.2\" stroke-linecap=\"round\" opacity=\".35\"/><circle cx=\"21\" cy=\"14\" r=\"2.6\" fill=\"#fff\"/></svg>Prove Me Wrong</a><a class=\"ds-nav-link\" href=\"#\">Home</a><a class=\"ds-nav-link\" aria-current=\"page\" href=\"#\">Test a thesis</a><a class=\"ds-nav-link\" href=\"#\">Scoreboard</a></nav>",
+      "css": ".ds-nav { display: flex; align-items: center; gap: 4px; height: 64px; padding: 0 32px; border-bottom: 1px solid var(--line, #e6eaf0); background: rgba(255,255,255,.85); backdrop-filter: blur(12px); font-family: Figtree, system-ui, sans-serif; } .ds-nav-logo { display: flex; align-items: center; gap: 10px; margin-right: 20px; color: var(--fg, #121826); font-size: 17px; font-weight: 700; letter-spacing: -0.025em; text-decoration: none; } .ds-nav-link { padding: 8px 12px; border-radius: 8px; color: var(--fg-2, #44506a); font-size: 15px; font-weight: 500; text-decoration: none; transition: background-color .15s, color .15s; } .ds-nav-link:hover { background: var(--surface, #f6f8fb); color: var(--fg, #121826); } .ds-nav-link[aria-current=page] { color: var(--primary-ink, #2563eb); background: none; } .ds-nav-link:focus-visible { outline: 2px solid var(--primary, #2563eb); outline-offset: 2px; }"
+    },
+    {
+      "name": "Statement Row",
+      "kind": "custom",
+      "refersTo": "statement-table",
+      "description": "Thesis line items: index, sentence, verdict chip on hairlines; undermined sentences struck in red; closed by a double-ruled net position.",
+      "html": "<ol class=\"ds-stmt\"><li><span class=\"ds-stmt-n\">1</span><p>The price is trending up.</p><span class=\"ds-chip-mini ds-for\">&#10003; Supported</span></li><li><span class=\"ds-stmt-n\">2</span><p class=\"ds-struck\">Volatility will stay low this quarter.</p><span class=\"ds-chip-mini ds-against\">&#10005; Undermined</span></li><li class=\"ds-stmt-total\"><span></span><p>Net position</p><span>1 supported, 1 undermined</span></li></ol>",
+      "css": ".ds-stmt { list-style: none; margin: 0; padding: 0; width: 520px; font-family: Figtree, system-ui, sans-serif; } .ds-stmt li { display: grid; grid-template-columns: 32px 1fr auto; gap: 20px; align-items: start; padding: 20px 4px; border-bottom: 1px solid var(--line, #e6eaf0); transition: background-color .15s; } .ds-stmt li:hover { background: var(--surface, #f6f8fb); } .ds-stmt p { margin: 0; font-size: 16px; line-height: 26px; color: var(--fg, #121826); } .ds-stmt-n { font-size: 14px; color: var(--fg-3, #636c80); } .ds-stmt p.ds-struck { text-decoration: line-through; text-decoration-color: var(--against, #c02a30); text-decoration-thickness: 1.5px; color: var(--fg-2, #44506a); } .ds-chip-mini { padding: 4px 10px; border-radius: 9999px; font-size: 13px; font-weight: 500; white-space: nowrap; } .ds-for { background: var(--for-wash, #e6f6ef); color: var(--for, #067a52); } .ds-against { background: var(--against-wash, #fdecec); color: var(--against, #c02a30); } .ds-stmt li.ds-stmt-total { border-bottom: 0; border-top: 3px double var(--line-strong, #d3d9e3); padding: 16px 4px; } .ds-stmt li.ds-stmt-total:hover { background: none; } .ds-stmt-total p, .ds-stmt-total span { font-size: 13px; font-weight: 500; }"
+    },
+    {
+      "name": "Panel",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "Flat 16px panel on a hairline; a clickable card lifts with the one floating shadow on hover.",
+      "html": "<div class=\"ds-panel\"><p class=\"ds-panel-t\">HDFC Bank</p><p class=\"ds-panel-s\">Banks, close of 14 Oct 2026</p><p class=\"ds-panel-b\">Each sentence gets a verdict, a lean and the evidence behind it.</p></div>",
+      "css": ".ds-panel { width: 340px; padding: 24px; border: 1px solid var(--line, #e6eaf0); border-radius: 16px; background: var(--card, #fff); font-family: Figtree, system-ui, sans-serif; transition: box-shadow .2s; } .ds-panel:hover { box-shadow: 0 1px 2px rgba(18,24,38,.04), 0 12px 32px -12px rgba(18,24,38,.14); } .ds-panel-t { margin: 0; font-size: 17px; font-weight: 700; letter-spacing: -0.025em; color: var(--fg, #121826); } .ds-panel-s { margin: 0; font-size: 13px; color: var(--fg-3, #636c80); } .ds-panel-b { margin: 16px 0 0; font-size: 15px; line-height: 1.6; color: var(--fg-2, #44506a); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Honest Statement",
+    "overview": "Prove Me Wrong is built to the category standard of Indian retail fintech (the Groww and Zerodha register), executed carefully, under its own palette and wordmark. The page is white with cool off-white bands, there is one confident blue for anything you can press, and Figtree is used everywhere: bold, tight headlines over a calm 16px body. Nothing is decorative. Every number on the page comes from the pipeline, and the visual system's job is to keep those numbers legible and to keep its verdicts honest.\n\nThe world's signature is accounting rather than ornament. Results read as a statement: line items separated by hairlines, a diverging Lean bar per line, a verdict chip that always carries an icon and a word, and a net position closed by a double rule. Colour is spent sparingly. Blue means \"you can act here\". Green and red mean \"the evidence decided\", and they appear nowhere else as hue. Charts and data marks stay in neutral ink.\n\nDensity is moderate: generous section rhythm on the persuasive home page, tighter statement tables on the operating surfaces (tester, scoreboard). Light is the default theme and dark is a toggle; both are full themes with their own tuned values, and every text pair meets WCAG AA in both. The user explicitly rejected handwritten or novelty type, busy texture (ruled paper, grain, boxes everywhere), and private-client app shells.",
+    "keyCharacteristics": [
+      "White ground, cool off-white bands, one blue for actions and links.",
+      "Green and red only for verdicts, always with an icon and a word.",
+      "Figtree throughout; tabular numerals on by default.",
+      "Statement grammar: hairline rows, Lean bars, double-ruled totals.",
+      "12px controls, 16px panels, pills for verdict chips.",
+      "One 1200px frame shared by the nav, every page and the footer."
+    ],
+    "rules": [
+      { "name": "The Blue Means Press Rule", "body": "Blue is for actions and links only: buttons, links, the active nav item, focus rings, selection and tab state. Never a chart series, a numeral, a column highlight or a badge.", "section": "colors" },
+      { "name": "The Verdict Pair Rule", "body": "Green and red are reserved for verdicts, and a verdict always carries an icon (check, cross, minus) and a word (Supported, Undermined, Open). Colour alone never states a result.", "section": "colors" },
+      { "name": "The Neutral Ink Rule", "body": "Charts and data marks use neutral ink: fg for the series and model, fg-3 for baselines, line-strong for reference lines and axes. A chart gains hue only where it is drawing a verdict.", "section": "colors" },
+      { "name": "The Both Themes Rule", "body": "Every text pair meets WCAG AA in both light and dark. A new colour enters with its dark counterpart and both contrast checks, or it does not enter.", "section": "colors" },
+      { "name": "The Balanced Heading Rule", "body": "Headings (h1 to h3) set at 1.15 leading with balanced wrapping and tight tracking. The display hero is the one tighter exception (1.08).", "section": "typography" },
+      { "name": "The No Eyebrow Rule", "body": "No eyebrow or kicker label sits above a heading. A heading opens its section on its own; context goes in the lead paragraph below it.", "section": "typography" },
+      { "name": "The Float Only Rule", "body": "Shadows only mark something floating above the page (a showcase card, a popover) or a hover lift on a clickable card. Tables, panels and section blocks sit flat on a 1px border.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do keep every surface inside the shared 1200px frame with 20px / 32px gutters.",
+      "Do use Action Blue only for buttons, links, the active nav item, focus, selection and tab state.",
+      "Do pair every green or red verdict with its icon and its word.",
+      "Do draw charts and data marks in neutral ink (fg series, fg-3 baseline, line-strong reference).",
+      "Do round controls at 12px and panels at 16px; keep chips as pills.",
+      "Do set headings at 1.15 leading with balanced wrapping.",
+      "Do check every new text pair for WCAG AA in both light and dark themes.",
+      "Do honour reduced motion: verdicts and Lean bars appear in their final state."
+    ],
+    "donts": [
+      "Don't put an eyebrow or kicker label above a heading.",
+      "Don't use blue for chart series, numerals, column highlights or badges.",
+      "Don't use green or red for anything that is not a verdict, or show a verdict by colour alone.",
+      "Don't add shadows to flat panels, tables or sections.",
+      "Don't use handwritten or novelty type, a second display family, or busy texture (ruled paper, grain, boxes everywhere).",
+      "Don't use Groww or Zerodha branding, colours or wordmarks."
+    ]
+  }
+}

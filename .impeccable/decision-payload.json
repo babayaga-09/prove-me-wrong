@@ -1,0 +1,146 @@
+{
+  "title": "Prove Me Wrong: choose the visual world",
+  "question": "The roll assigned \"Notes to the Accounts\", which treats your thesis like a company's audited statements. Keep it, take an alternate, or re-roll.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Notes to the Accounts",
+      "kicker": "THE ROLL",
+      "lineage": "Indian annual reports: audited statements, the auditor's opinion, notes to the accounts",
+      "thesis": "Your thesis is audited the way a company's books are. Each sentence gets an auditor's opinion: Unmodified, Qualified, Adverse or Disclaimer.",
+      "palette": ["#F4F6F5", "#0E3B2E", "#1F7A5C", "#C98A12", "#C2412D", "#5B6670"],
+      "materials": ["statement tables with tabular figures", "numbered Note column", "this quarter vs last quarter columns", "auditor's opinion stamp"],
+      "viewport": "A deep statement-green left rail with stock search, the Nifty 50 list and the Scoreboard link. The main area is the thesis as a three-row statement: sentence | opinion | Note refs | this quarter vs last quarter. A side panel holds the cited notes. A 'Run audit' button and an 'as at' quarter control sit at the top.",
+      "risk": "Can read corporate and dry if the opinion stamps and colour roles are set timidly. The stamp has to be the hero.",
+      "raised": [
+        {"from": "rw-lexicon-shoulder-and-plate", "raise": "Struck-and-restated: an Adverse sentence is struck through and a 'Restated' version appears beneath it, using the restatement idiom of financial statements."},
+        {"from": "variable-font-specimen", "raise": "One live axis: the 'as at' quarter control re-runs every opinion continuously, so you watch your thesis age quarter by quarter."},
+        {"from": "notation-diagram-systems-labanotation", "raise": "Symmetry: evidence for and against is drawn mirrored around each sentence's centre line, so the balance reads before any words."},
+        {"from": "emigre-bitmap-specimen", "raise": "Honest resolution: every forecast is shown at the precision the model actually has, as ranges with no false decimals."},
+        {"from": "vernacular-ephemera-cassette-j-card", "raise": "A hard budget: three sentences, metered like a tape side, so a thesis can't sprawl."}
+      ],
+      "wireframe": {"cols": 12, "rows": 10, "regions": [
+        {"label": "green rail: search, Nifty 50, Scoreboard", "x": 0, "y": 0, "w": 2, "h": 10, "accent": true},
+        {"label": "company + as-at quarter + Run audit", "x": 2, "y": 0, "w": 10, "h": 1},
+        {"label": "thesis statement: sentence | opinion stamp | notes", "x": 2, "y": 1, "w": 7, "h": 5},
+        {"label": "notes to the thesis (cited evidence)", "x": 9, "y": 1, "w": 3, "h": 9},
+        {"label": "signals: return range, volatility, regime, call drift (with track record)", "x": 2, "y": 6, "w": 7, "h": 4}
+      ]},
+      "comp": ".impeccable/mocks/decision/assigned.webp"
+    },
+    {
+      "id": "model-pick",
+      "label": "Third Umpire Review",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "cricket DRS: ball-tracking, the umpire's call, the big-screen verdict",
+      "thesis": "You challenge your own view the way a player reviews a decision: ball-tracking (the return range) projects the path and the big screen says OUT, NOT OUT or UMPIRE'S CALL.",
+      "palette": ["#0B1F3A", "#F2F4F7", "#2E9E5B", "#E0B321", "#D64545"],
+      "materials": ["broadcast lower-thirds", "projected path cone", "review-remaining pips"],
+      "viewport": "A navy shell. The thesis sits on the left and each sentence gets a verdict band. The centre is a projected 20-day return path drawn as a cone with the real outcome overlaid. 'Reviews remaining' pips show the live-check quota.",
+      "risk": "Instantly familiar to an Indian audience, which is also why it can tip into a cricket costume and feel gimmicky to a non-cricket recruiter.",
+      "wireframe": {"cols": 12, "rows": 10, "regions": [
+        {"label": "top bar + reviews remaining", "x": 0, "y": 0, "w": 12, "h": 1, "accent": true},
+        {"label": "thesis with verdict bands", "x": 0, "y": 1, "w": 5, "h": 9},
+        {"label": "projected return cone", "x": 5, "y": 1, "w": 7, "h": 6},
+        {"label": "signal track records", "x": 5, "y": 7, "w": 7, "h": 3}
+      ]},
+      "comp": ".impeccable/mocks/decision/model-pick.webp"
+    },
+    {
+      "id": "challenger-yellow-wayfinding",
+      "label": "Terminal Yellow",
+      "verdict": "competitive",
+      "lineage": "airport wayfinding bands",
+      "thesis": "One decision at a time: a saturated yellow band always shows the next thing that would make you wrong, and roughly how far off it is.",
+      "palette": ["#FFC917", "#111111", "#FFFFFF", "#2B2B2B"],
+      "materials": ["sticky sign bands", "pictogram insets", "split-flap updates"],
+      "viewport": "A sticky yellow band shows 'Next test: Q3 concall, 18 days', with the thesis rows scrolling beneath it.",
+      "case": "Fuses cleanly and wins on clarity, but retail investors don't recognise the world, so it holds only one of the two axes.",
+      "risk": "A full yellow field gets tiring on a screen you stay on for long, which works against 'easy on the eye'.",
+      "hero": "https://impeccable.style/worlds/cards/wayfinding-cartography-signage-terminal-yellow-wayfinding-hero.webp",
+      "comp": ".impeccable/mocks/decision/challenger-yellow.webp"
+    },
+    {
+      "id": "challenger-lexicon",
+      "label": "Lexicon Shoulder",
+      "verdict": "declined",
+      "lineage": "19th-century lexicon page",
+      "thesis": "Evidence as marginalia in a shoulder column, with colour kept inside plates.",
+      "palette": ["#F1E9D6", "#1A1A1A", "#C23B22"],
+      "materials": ["shoulder margin", "bordered plates"],
+      "viewport": "A text column with evidence notes down the outside margin.",
+      "risk": "Lands on the cream-and-serif editorial default.",
+      "case": "Investors don't identify with it, and it reads as a book rather than a tool.",
+      "kept": "The struck-and-restated correction primitive.",
+      "hero": "https://impeccable.style/worlds/cards/rw-lexicon-shoulder-and-plate-hero.webp"
+    },
+    {
+      "id": "challenger-variable-font",
+      "label": "Variable Specimen",
+      "verdict": "declined",
+      "lineage": "variable-font specimen",
+      "thesis": "Conviction as font weight, driven live by one axis.",
+      "palette": ["#FAFAF8", "#111111", "#3A5BFF"],
+      "materials": ["axis slider", "glyph grid"],
+      "viewport": "Thesis sentences thinning as evidence undermines them.",
+      "risk": "A typographer's toy that investors wouldn't recognise.",
+      "case": "Loses on both axes.",
+      "kept": "One live axis remaps the whole page (the as-at quarter control).",
+      "hero": "https://impeccable.style/worlds/cards/variable-font-specimen-hero.webp"
+    },
+    {
+      "id": "challenger-labanotation",
+      "label": "Dance Score",
+      "verdict": "declined",
+      "lineage": "Labanotation",
+      "thesis": "Evidence for and against as mirrored columns around a centre staff.",
+      "palette": ["#FFFFFF", "#111111", "#BBBBBB"],
+      "materials": ["centre staff", "hatched blocks"],
+      "viewport": "A vertical staff with the thesis as the spine.",
+      "risk": "Unreadable without training.",
+      "case": "Loses on both axes.",
+      "kept": "Mirrored for/against symmetry around each sentence.",
+      "hero": "https://impeccable.style/worlds/cards/notation-diagram-systems-labanotation-hero.webp"
+    },
+    {
+      "id": "challenger-bitmap",
+      "label": "Bitmap Specimen",
+      "verdict": "declined",
+      "lineage": "Emigre bitmap faces",
+      "thesis": "Low resolution worn as honesty.",
+      "palette": ["#F5F5F0", "#0A0A0A", "#FF3B00"],
+      "materials": ["pixel type", "halftone"],
+      "viewport": "Pixel headline over dense columns.",
+      "risk": "Retro novelty.",
+      "case": "Loses on both axes.",
+      "kept": "Show numbers only at the precision the model really has.",
+      "hero": "https://impeccable.style/worlds/cards/emigre-bitmap-specimen-hero.webp"
+    },
+    {
+      "id": "challenger-jcard",
+      "label": "Mixtape J-card",
+      "verdict": "declined",
+      "lineage": "cassette inlay",
+      "thesis": "Bull side A, bear side B.",
+      "palette": ["#FFFFFF", "#1E3A8A", "#C8102E"],
+      "materials": ["ballpoint", "ruled inlay"],
+      "viewport": "A folded card with two sides.",
+      "risk": "Nostalgia costume.",
+      "case": "Loses on both axes.",
+      "kept": "A hard three-sentence budget, metered.",
+      "hero": "https://impeccable.style/worlds/cards/vernacular-ephemera-cassette-j-card-hero.webp"
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "buildPath": {"value": "code", "toggle": false},
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "A clean fintech research dashboard (Tickertape or Koyfin level of craft), done impeccably.",
+    "palette": ["#FFFFFF", "#0F172A", "#16A34A", "#DC2626", "#2563EB"],
+    "materials": ["card grid", "candlestick chart", "stat tiles"],
+    "viewport": "Sidebar, price chart up top, thesis and signal cards below.",
+    "risk": "Indistinguishable from every stock app, which is exactly what you said to avoid."
+  },
+  "steer": true
+}

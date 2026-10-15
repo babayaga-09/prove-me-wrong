@@ -1,0 +1,74 @@
+{
+  "title": "Prove Me Wrong: choose a serious, premium world",
+  "question": "Three calm, finance-credible directions (no handwriting, no texture), plus the category standard. Pick one, or re-roll.",
+  "options": [
+    {
+      "id": "private-client",
+      "label": "Private Client Report",
+      "kicker": "CONVENTIONAL · 1",
+      "lineage": "Private-banking quarterly statements: the document a wealth manager hands a client",
+      "thesis": "Your thesis is presented like a private-bank statement: each sentence carries evidence in 'For' and 'Against' columns and a net balance.",
+      "palette": ["#FFFFFF", "#0F1E3D", "#24375E", "#B08D57", "#1F7A5C", "#B3261E", "#6B7280"],
+      "materials": ["deep navy shell rail", "hairline-ruled statement tables", "tabular figures", "one brass accent for selection"],
+      "viewport": "A navy left rail (search, Thesis, Scoreboard). White work area with the company, last close and a primary 'Test my thesis' button. A three-row statement: sentence | For | Against | net verdict. The cited evidence opens in a right panel.",
+      "risk": "Without the For/Against balance done with real precision, it slides into a generic bank portal.",
+      "wireframe": {"cols": 12, "rows": 10, "regions": [
+        {"label": "navy rail", "x": 0, "y": 0, "w": 2, "h": 10, "accent": true},
+        {"label": "company + Test button", "x": 2, "y": 0, "w": 10, "h": 1},
+        {"label": "thesis statement: For | Against | net", "x": 2, "y": 1, "w": 7, "h": 5},
+        {"label": "evidence panel", "x": 9, "y": 1, "w": 3, "h": 5},
+        {"label": "signals table with track records", "x": 2, "y": 6, "w": 10, "h": 4}
+      ]},
+      "comp": ".impeccable/mocks/decision/r2-private-client.webp"
+    },
+    {
+      "id": "research-note",
+      "label": "Equity Research Note",
+      "kicker": "CONVENTIONAL · 2",
+      "lineage": "Swiss-style sell-side research notes: strict grid, a key-data table, a rating box on page one",
+      "thesis": "Every thesis comes back as a one-page research note on you: the usual rating box becomes a Verdict box per sentence, set on a strict grid with big, exact figures.",
+      "palette": ["#FFFFFF", "#0B0F14", "#1D4ED8", "#E8EEF9", "#0F7B5F", "#C2410C", "#64748B"],
+      "materials": ["strict 12-column grid", "large tabular numerals", "key-data sidebar", "thin rules, no boxes"],
+      "viewport": "A slim top bar (search, Scoreboard, How it works). The headline is the company name with key data in a right sidebar (close, range, volatility, regime). Below are three verdict rows, each with a sentence, its verdict chip, and one line of evidence.",
+      "risk": "Can feel austere and document-like if the grid and type scale aren't executed with confidence.",
+      "wireframe": {"cols": 12, "rows": 10, "regions": [
+        {"label": "top bar", "x": 0, "y": 0, "w": 12, "h": 1, "accent": true},
+        {"label": "company headline", "x": 0, "y": 1, "w": 8, "h": 2},
+        {"label": "key data sidebar", "x": 8, "y": 1, "w": 4, "h": 5},
+        {"label": "verdict rows", "x": 0, "y": 3, "w": 8, "h": 4},
+        {"label": "signals + track record", "x": 0, "y": 7, "w": 12, "h": 3}
+      ]},
+      "comp": ".impeccable/mocks/decision/r2-research-note.webp"
+    },
+    {
+      "id": "reference-range",
+      "label": "Reference Ranges",
+      "kicker": "CONVENTIONAL · 3",
+      "lineage": "Premium diagnostic reports: every value shown against its normal range, flagged when outside it",
+      "thesis": "Each signal is read the way a doctor reads bloodwork: today's value sits on its normal-range bar (the baseline) and is flagged when it's outside, so you see at a glance what's unusual.",
+      "palette": ["#FFFFFF", "#0F172A", "#0E7490", "#E6F4F7", "#15803D", "#B91C1C", "#94A3B8"],
+      "materials": ["reference-range bars", "flag markers H / L", "cool slate type", "soft teal tints"],
+      "viewport": "A left rail and a header with the stock and a Test button. Thesis rows show their verdicts. Below, a 'Results' table: signal | today | reference range bar | flag | model track record.",
+      "risk": "Medical connotations could feel odd for finance; it has to stay finance-first, and the range bar does the work.",
+      "wireframe": {"cols": 12, "rows": 10, "regions": [
+        {"label": "rail", "x": 0, "y": 0, "w": 2, "h": 10, "accent": true},
+        {"label": "header + Test", "x": 2, "y": 0, "w": 10, "h": 1},
+        {"label": "thesis verdict rows", "x": 2, "y": 1, "w": 10, "h": 4},
+        {"label": "results table with range bars", "x": 2, "y": 5, "w": 10, "h": 5}
+      ]},
+      "comp": ".impeccable/mocks/decision/r2-reference-range.webp"
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "buildPath": {"value": "code", "toggle": false},
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard, done impeccably",
+    "thesis": "A clean research dashboard at the craft level of Koyfin, Linear or Stripe's dashboard: neutral, precise, quietly confident.",
+    "palette": ["#FFFFFF", "#0F172A", "#4F46E5", "#F1F5F9", "#16A34A", "#DC2626"],
+    "materials": ["neutral greys", "one indigo accent", "crisp cards", "sans throughout"],
+    "viewport": "A sidebar, the stock header, the thesis panel with verdict chips, and signal cards below.",
+    "risk": "Polished but forgettable: it will look like many AI-built dashboards."
+  },
+  "steer": true
+}

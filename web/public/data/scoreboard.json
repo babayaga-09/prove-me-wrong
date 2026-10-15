@@ -1,0 +1,204 @@
+{
+ "as_of": "2026-10-14",
+ "horizon_days": 20,
+ "first_test_year": 2019,
+ "method": "Expanding-window walk-forward by calendar year. Training data stops 25 trading days before each test year so no target overlaps it. Every number below is out-of-sample.",
+ "models": [
+  {
+   "id": "return_range",
+   "name": "20-day return range",
+   "algo": "LightGBM quantile regression (10th / 50th / 90th pct)",
+   "baseline": "The stock's own trailing 2-year spread of 20-day returns",
+   "metric": "Pinball loss (lower is better); skill = 1 - model/baseline",
+   "skill": 0.010078732178387062,
+   "beats_baseline": true,
+   "coverage": 0.7508313229445133,
+   "baseline_coverage": 0.7837364977940058,
+   "target_coverage": 0.8,
+   "direction_hit": 0.5519114994240508,
+   "always_up_hit": 0.5741453130773077,
+   "calibration": [
+    {
+     "nominal": 0.1,
+     "model": 0.12372041468344526,
+     "baseline": 0.11204929256047468
+    },
+    {
+     "nominal": 0.5,
+     "model": 0.49969572493534153,
+     "baseline": 0.5104648888309318
+    },
+    {
+     "nominal": 0.9,
+     "model": 0.8745517376279586,
+     "baseline": 0.8957857903544805
+    }
+   ],
+   "by_year": [
+    {
+     "year": 2019,
+     "n": 11327,
+     "skill": 0.008638512714197133,
+     "coverage": 0.7459168358788735
+    },
+    {
+     "year": 2020,
+     "n": 11750,
+     "skill": 0.005094172715840228,
+     "coverage": 0.6158297872340426
+    },
+    {
+     "year": 2021,
+     "n": 11726,
+     "skill": 0.0075739484860669615,
+     "coverage": 0.7597646256182842
+    },
+    {
+     "year": 2022,
+     "n": 11994,
+     "skill": 0.002106185991464282,
+     "coverage": 0.7310321827580457
+    },
+    {
+     "year": 2023,
+     "n": 12005,
+     "skill": 0.006028326918378735,
+     "coverage": 0.7843398583923366
+    },
+    {
+     "year": 2024,
+     "n": 12120,
+     "skill": 0.021821355453137903,
+     "coverage": 0.7990924092409241
+    },
+    {
+     "year": 2025,
+     "n": 12450,
+     "skill": 0.04549583517395783,
+     "coverage": 0.8201606425702811
+    },
+    {
+     "year": 2026,
+     "n": 8650,
+     "skill": -0.013025524477054518,
+     "coverage": 0.7420809248554914
+    }
+   ]
+  },
+  {
+   "id": "volatility",
+   "name": "20-day volatility",
+   "algo": "LSTM (deep learning) vs GARCH(1,1)",
+   "baseline": "Last 20 days' volatility carried forward",
+   "metric": "QLIKE loss (lower is better); skill = 1 - model/baseline",
+   "contenders": [
+    {
+     "id": "lstm",
+     "name": "LSTM",
+     "loss": 0.33131556943697155,
+     "skill": 0.24818575546889454
+    },
+    {
+     "id": "garch",
+     "name": "GARCH(1,1)",
+     "loss": 0.3152250368224295,
+     "skill": 0.28469804990245373
+    },
+    {
+     "id": "baseline",
+     "name": "Trailing 20-day vol",
+     "loss": 0.440688071351465,
+     "skill": 0.0
+    }
+   ],
+   "by_year": [
+    {
+     "year": 2019,
+     "n": 10845,
+     "lstm": 0.3667261182767281,
+     "garch": 0.37623039822935733
+    },
+    {
+     "year": 2020,
+     "n": 11500,
+     "lstm": -0.07503781267604648,
+     "garch": 0.10821358240231904
+    },
+    {
+     "year": 2021,
+     "n": 11656,
+     "lstm": 0.28745296544970433,
+     "garch": 0.3847394479651989
+    },
+    {
+     "year": 2022,
+     "n": 11656,
+     "lstm": 0.36446803866855904,
+     "garch": 0.2866128291188774
+    },
+    {
+     "year": 2023,
+     "n": 11760,
+     "lstm": 0.2288859877443552,
+     "garch": 0.10942210757090376
+    },
+    {
+     "year": 2024,
+     "n": 12054,
+     "lstm": 0.38933512033246676,
+     "garch": 0.48031901829755086
+    },
+    {
+     "year": 2025,
+     "n": 12201,
+     "lstm": 0.36627016945279345,
+     "garch": 0.2674471045860073
+    },
+    {
+     "year": 2026,
+     "n": 8650,
+     "lstm": 0.45761860243130525,
+     "garch": 0.4852994238299977
+    }
+   ]
+  },
+  {
+   "id": "regime",
+   "name": "Market regime",
+   "algo": "3-state Gaussian HMM on Nifty 50 returns and volatility, forward-filtered",
+   "baseline": "No regime: every day treated alike",
+   "metric": "Does the regime called today separate the NEXT 20 days? (out-of-sample)",
+   "stressed_vs_calm_vol": 1.9039083257721345,
+   "informative": true,
+   "regimes": [
+    {
+     "regime": "Calm",
+     "days": 805,
+     "fwd_vol_ann": 0.1110019411661214,
+     "fwd_ret": 0.008723248596737702
+    },
+    {
+     "regime": "Choppy",
+     "days": 700,
+     "fwd_vol_ann": 0.15152776035573368,
+     "fwd_ret": -0.00010932557377590532
+    },
+    {
+     "regime": "Stressed",
+     "days": 395,
+     "fwd_vol_ann": 0.21133751996304717,
+     "fwd_ret": 0.02032072491579761
+    }
+   ]
+  },
+  {
+   "id": "call_drift",
+   "name": "Earnings-call language drift",
+   "algo": "FinBERT + embedding drift between consecutive concalls",
+   "baseline": "-",
+   "metric": "-",
+   "status": "not_built",
+   "note": "Needs a scraped transcript archive first. No numbers are shown until it has been backtested like the others."
+  }
+ ]
+}
