@@ -2,7 +2,7 @@
 
 **Live site: https://prove-me-wrong-gamma.vercel.app**
 
-Write your view on a Nifty 50 stock in three sentences. Press Play. Each sentence is marked **supported**, **undermined** (with a restated version) or **no signal**, using the one signal that can actually test it. Side B lists what would prove each sentence wrong.
+Write your view on a Nifty 50 stock in three sentences and test it. Each sentence is marked **supported**, **undermined** (with what the evidence says instead) or **open** (the data can't settle it), using the one signal that can actually test it. A second tab lists what would prove each sentence wrong.
 
 The difference from a normal stock app: every model is backtested on years it never saw, against a simple baseline, and the **scoreboard** shows the result, including the losses. Direction calls lost to "assume it goes up", so the app never makes them.
 
@@ -34,7 +34,8 @@ Logic check: `cd web && node --experimental-strip-types lib/engine.check.ts`
 
 - `pipeline/build.py`: fetch, features, walk-forward backtests, live forecasts, JSON output
 - `web/lib/engine.ts`: sentence → claim type → verdict, restatement and tripwire
-- `web/components/ThesisCheck.tsx`: the tape deck (Side A / Side B, Play, liner notes)
+- `web/components/ThesisCheck.tsx`: the thesis tester (results table, Lean bar, evidence panel, tripwires)
+- `web/app/page.tsx`: the home page
 - `web/app/scoreboard`: every model's track record
 
 Analysis only, not investment advice. The app does not say buy, sell or hold.
